@@ -1,5 +1,5 @@
 # Framework-for-emotion-detection
-In this repository you can find the code for the creation of a framework based on machine learning and deep learning for the detection of emotional states from the EEG signal. This framework has been described in the paper "Analyzing the impact of Driving tasks when detecting emotions through Brain-Computer Interfaces" [pdf](https://arxiv.org/abs/2209.00993).
+In this repository you can find the code for the creation of a framework based on machine learning and deep learning for the detection of emotional states from the EEG signal. This framework has been described in the paper ["Analyzing the impact of Driving tasks when detecting emotions through Brain-Computer Interfaces"](https://arxiv.org/abs/2209.00993).
 
 **Abstract:**
 
