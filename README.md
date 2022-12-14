@@ -1,0 +1,14 @@
+# Framework-for-emotion-detection
+In this repository you can find the code for the creation of a framework based on machine learning and deep learning for the detection of emotional states from the EEG signal. This framework has been described in the paper "Analyzing the impact of Driving tasks when detecting emotions through Brain-Computer Interfaces" (arXiv:2209.00993).
+
+**Abstract:**
+
+Traffic accidents are the leading cause of death among young people, a problem that today costs an enormous number of victims. Several technologies have been proposed to prevent accidents, being Brain-Computer Interfaces (BCIs) one of the most promising. In this context, BCIs have been used to detect emotional states, concentration issues, or stressful situations, which could play a fundamental role in the road since they are directly related to the drivers' decisions. However, there is no extensive literature applying BCIs to detect subjects' emotions in driving scenarios. In such a context, there are some challenges to be solved, such as (i) the impact of performing a driving task on the emotion detection and (ii) which emotions are more detectable in driving scenarios. To improve these challenges, this work proposes a framework focused on detecting emotions using electroencephalography with machine learning and deep learning algorithms. In addition, a use case has been designed where two scenarios are presented. The first scenario consists in listening to sounds as the primary task to perform, while in the second scenario listening to sound becomes a secondary task, being the primary task using a driving simulator. In this way, it is intended to demonstrate whether BCIs are useful in this driving scenario. The results improve those existing in the literature , achieving 99% accuracy for the detection of two emotions (non-stimuli and angry), 93% for three emotions (non-stimuli, angry and neutral) and 75% for four emotions (non-stimuli, angry, neutral and joy).
+
+This repository is composed of 3 files, with each of the phases of the BCI cycle: preprocessing, feature extraction, feature selection and classification. 
+
+* Preprocessing and Feature Extraction: Contains the preprocessing necessary to remove noise from the EEG signal, and then the feature extraction performed. This extraction is based on obtaining statistical values of each of the brain rhythms of the EEG signal, as well as signal entropy values. 
+
+* Feature Selection and ML Classification: This file contains the dimensionality reduction process of the model based on the elimination of highly correlated variables, and the application of the PCA algorithm. Subsequently, models based on the random forest, XGBoost and kNN algorithms are trained and evaluated.
+
+* DL Classification: This file contains the neural networks proposed in this work. In this case, no feature selection has been performed because DL algorithms work best with large amounts of data.
